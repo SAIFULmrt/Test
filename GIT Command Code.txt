@@ -1,0 +1,119 @@
+Fore more info: https://iishanto.com/git-bangla-tutorial/
+
+
+config = a convenience function that is used to set Git configuration values on a global or local project level
+git config list //show all the account or configuration made earlier
+
+// fix author unknown
+git config user.email "you@example.com"
+git config user.name "Your Name"
+
+//for whole pc not a specific folder
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+Repo = Repository
+Git repository: a folder or directory where we stored project. Ex: online hosting such as github,gitlab or offline local
+Modified: The files have been changed, but Git now doesn't mark them.
+          These files will not be included in Git's next snapshot.
+Staged: Changes to files are tracked by Git, and can be included in subsequent Git snapshots.
+Commited: The files are included in the next Git snapshot.
+
+What is snapshot: A Git snapshot contains all files and folders at a specific point in time.
+                  Connectors are represented by Git Tree objects and are kept in a folder named .git.
+
+
+git status
+git add file_name //ex: git add README.md
+git commit -m "Initial commit"
+
+git push origin main //send to github
+
+
+
+////////////////////////////////////////////////////////////////basics - Command Line Code:
+
+../ back
+clear clear
+
+
+mkdir direcotry_name = make directory
+cd = change directory
+ls = show files
+cf ../ = back from folder
+git status = show changes status
+mkdir create new folder
+touch create new file
+pwd = where I am now - the location of the drive
+# = h1 header file
+.md = markdown files
+
+
+
+
+
+/////////////////////////////////////////////Clone/Pull (Copying from Repo to Lcoal)
+
+clone = copying
+git clone = copy all file
+git pull = copy changes file only
+
+git clone github_httpslink_repo optional_dir_name = which repo is to copy
+ex: git clone https://github.com/SAIFULmrt/example-repo.git example_repo
+
+
+
+
+
+Status
+
+Add
+
+Commit
+
+Push
+
+
+
+
+///////////////////////////////////////////////working directory theke stage (add)
+
+git add --all or git add --A
+git reset
+git add . current folder er somosto jinish
+git add * sob stage e tulbe except deleted one
+git add *.file_extentionName true for a specific file type
+
+
+
+/////////////////////////////////////////////////stage to local repository (commit)
+
+git commit -m "any comments about changes"
+git reset HEAD~ reset from commit
+git reset --hard
+git rm fileName.extenstion delete the file and update on stage
+git rm fileName.extenstion -f delete for changes file
+git rm --cached fileName.extenstion
+$ git rm -r folderName
+
+
+/////////////////////////////////////////////////////////////////////// branch
+git branch tells how many branch
+git branch branchName // create new branch
+git checkout branchName // switch branch
+
+/////////////////////////////////////////////////////////////////////// marge
+git merge branchName -m "any comments"
+
+// push // local directory theke push korte chai remote e
+// fetch // remot theke just changes gula niye ashte chai local directory te
+// git pull // remote theke absolutely sob kichi niye merge kore dewa local directory te
+
+git push origin branchName
+git fetch (only changes)+ git merge (implements changes)
+git pull
+
+
+
+
